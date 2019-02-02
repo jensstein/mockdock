@@ -12,7 +12,7 @@ import conu
 import mockdock
 
 class IntegrationTest(unittest.TestCase):
-    def test_blah(self):
+    def test_server(self):
         print("building image tls-test")
         conu.DockerImage.build(".", tag="tls-test", dockerfile="Dockerfile-tlstest")
         print("building image mockdock")
