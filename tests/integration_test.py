@@ -67,13 +67,17 @@ class IntegrationTest(unittest.TestCase):
                     client_container)
 
                 result1 = client_container.execute(["curl", "-vi", "google.com"])
+                print("Testing {} in {}".format(b'{"response": "OK"}', result1[-1]))
                 self.assertEqual(b'{"response": "OK"}' in result1[-1], True)
                 result2 = client_container.execute(["curl", "-vi", "https://google.com"])
+                print("Testing {} in {}".format(b'{"response": "OK"}', result2[-1]))
                 self.assertEqual(b'{"response": "OK"}' in result2[-1], True)
                 result3 = client_container.execute(["curl", "-vi",
                     "domain.org:1010/path"])
+                print("Testing {} in {}".format(b"Okay response", result3[-1]))
                 self.assertEqual(b"Okay response" in result3[-1], True)
                 result4 = client_container.execute(["curl", "-vi", "https://domain.org"])
+                print("Testing {} in {}".format(b"Not Found", result4[-1]))
                 self.assertEqual(b"Not Found" in result4[-1], True)
             finally:
                 server_container.kill()
