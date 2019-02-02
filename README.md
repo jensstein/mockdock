@@ -21,7 +21,7 @@ Responses to http requests are specified as json in the format
 {
 	"domain.tld/path": {
 		"data": "response data",
-		"content-type": "text/plain"
+		"content-type": "text/plain",
 		"code": 200
 	},
 	"domain.tld/path2": {
