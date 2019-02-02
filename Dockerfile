@@ -7,8 +7,6 @@ WORKDIR /home/mockdock
 
 COPY src src
 COPY setup.py setup.py
-COPY Pipfile Pipfile
-COPY Pipfile.lock Pipfile.lock
 COPY start.sh start.sh
 
 RUN python3 -m venv ENV && \
