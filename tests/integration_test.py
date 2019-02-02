@@ -90,6 +90,8 @@ class IntegrationTest(unittest.TestCase):
                 client_container.delete()
 
     def test_install_certificate(self):
+        print("building image tls-test")
+        conu.DockerImage.build(".", tag="tls-test", dockerfile="Dockerfile-tlstest")
         with conu.DockerBackend() as backend:
             try:
                 image = backend.ImageClass("tls-test")
