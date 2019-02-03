@@ -10,6 +10,8 @@ run```. It can be set to resolve all dns requests to itself, thereby
 constituting a mock server for all dns-based http requests of the
 container under test.
 
+Docker images are uploaded to docker hub: https://hub.docker.com/r/jensstein/mockdock
+
 The ```integration_test``` module under the tests directory serves as
 practical documentation of how ```mockdock``` can be used in a test
 scenario with a docker container.
