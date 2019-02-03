@@ -8,6 +8,7 @@ WORKDIR /home/mockdock
 COPY src src
 COPY setup.py setup.py
 COPY start.sh start.sh
+COPY README.md README.md
 
 RUN python3 -m venv ENV && \
 	source ENV/bin/activate && \
