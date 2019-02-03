@@ -1,6 +1,7 @@
 mockdock
 ========
 [![Build Status](https://travis-ci.org/jensstein/mockdock.svg?branch=master)](https://travis-ci.org/jensstein/mockdock)
+[![Pypi Package](https://img.shields.io/pypi/v/mockdock.svg?style=flat)](https://pypi.org/project/mockdock/)
 
 ```mockdock``` is a dns resolver and http server usable for testing
 containers.
