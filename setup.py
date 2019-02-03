@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name="mockdock",
-    version="0.1.0",
+    version="0.8.0",
     package_dir={"": "src"},
     packages=["mockdock"],
     description="",
