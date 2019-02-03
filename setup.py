@@ -2,11 +2,18 @@
 
 from setuptools import setup
 
+with open("README.md") as readme_fp:
+    long_description = readme_fp.read()
+
 setup(name="mockdock",
-    version="0.8.0",
+    version="0.8.1",
     package_dir={"": "src"},
     packages=["mockdock"],
-    description="",
+    description="mockdock is a dns resolver and http server usable for testing containers",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
+    license="MIT",
+    url="https://github.com/jensstein/mockdock",
     provides=["mockdock"],
     entry_points={
         "console_scripts": [
