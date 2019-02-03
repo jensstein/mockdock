@@ -1,5 +1,6 @@
 mockdock
 ========
+[![Build Status](https://travis-ci.org/jensstein/mockdock.svg?branch=master)](https://travis-ci.org/jensstein/mockdock)
 
 ```mockdock``` is a dns resolver and http server usable for testing
 containers.
